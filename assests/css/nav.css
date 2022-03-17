@@ -10,8 +10,9 @@ li.botones_nav{
 	height: 50px;
     margin-right: 20px;	
     margin-left: 20px;	
+    list-style:none;
 }
-li>a{
+.colorLetra{
 	font-family: fantasy;
 	text-decoration:none;
 	color: white;
@@ -19,9 +20,7 @@ li>a{
 li.botones_nav:hover{
 	background-color:#3b6575;
 }
-nav>ul>li{
-	list-style:none;
-}
+
 .flex-container-horizontal {
     display: flex;
     flex-direction: row;
