@@ -1,0 +1,29 @@
+nav{
+	background-color:#4bafda;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+}
+li.botones_nav{
+	font-size:40px;
+	text-align: center;
+	height: 50px;
+    margin-right: 20px;	
+    margin-left: 20px;	
+    list-style:none;
+}
+.colorLetra{
+	font-family: fantasy;
+	text-decoration:none;
+	color: white;
+}
+li.botones_nav:hover{
+	background-color:#3b6575;
+}
+
+.flex-container-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
