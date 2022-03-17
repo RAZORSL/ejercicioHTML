@@ -1,22 +1,15 @@
-
-.flex-container-horizontal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  
-  }
 nav{
 	background-color:#4bafda;
 	margin-left: 20%;
 	margin-right: 20%;
 	text-align: center;
 }
-  li.botones_nav{
+li.botones_nav{
 	font-size:40px;
-	width: 18%;
 	text-align: center;
-	height: 50px;	
-
+	height: 50px;
+    margin-right: 20px;	
+    margin-left: 20px;	
 }
 li>a{
 	font-family: fantasy;
@@ -26,7 +19,12 @@ li>a{
 li.botones_nav:hover{
 	background-color:#3b6575;
 }
-
-li{
+nav>ul>li{
 	list-style:none;
 }
+.flex-container-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
