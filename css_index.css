@@ -1,0 +1,30 @@
+
+.flex-container-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+  
+  }
+nav{
+    align-items: center;
+}
+  li.botones_nav{
+	font-size:50px;
+	background-color:white;
+	width: 18%;
+	text-align: center;
+	height: 60px;
+	background-color:#4bafda;
+	border-width: 10px;
+	border-style: solid;
+	border-color:white;
+	
+}
+
+li.botones_nav:hover{
+	background-color:#3b6575;
+}
+
+li{
+	list-style:none;
+}
