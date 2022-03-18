@@ -10,7 +10,7 @@ li.botones_nav {
   margin-left: 20px;
   list-style: none;
 }
-.colorLetra {
+a.colorLetra {
   font-family: fantasy;
   text-decoration: none;
   color: white;

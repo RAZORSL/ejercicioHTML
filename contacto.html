@@ -1,122 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/css/contacto.css">
+    <link rel="stylesheet" href="assests/css/nav.css">
     <title>Document</title>
 </head>
 
-<link rel="stylesheet" href="assests/css/contacto.css">
-
 <body>
     <header>
-        <img id="agrupo" src="assests/img/Agrupo.png" alt="agrupo">
-        <br>
-        <h2>Contacta con nosotros</h2>
-        
+        <div style="text-align: center">
+            <img src="img/logoAgrupo2.png">
+        </div>
     </header>
 
+    <nav>
+        <ul class="flex-container-horizontal">
+            <li class="botones_nav"> <a href="index.html" class="colorLetra">Inicio</a> </li>
+            <li class="botones_nav"> <a href="sobre_nosotros.html" class="colorLetra">Quienes Somos</a> </li>
+            <li class="botones_nav"> <a href="contacto.html" class="colorLetra">Contacto</a> </li>
+        </ul>
+    </nav>
+
     <section>
-        <h3 class="form">Formulario de contacto</h3>
-        <h3 class="info">Información de contacto</h3>
+        <div id="flex_contacto1">
+            <h3 class="form">Formulario de contacto</h3>
+            <h3 class="info">Información de contacto</h3>
+        </div>
 
-<article>
-    <form action="">
-        <label for="nom">Nombre y apellidos *</label>
-        <br>
-        <input class="wide" type="text" name="nombre" id="nom" maxlength="50" required>
-        <br><br>
-        <label for="tel">Movil *</label>
-        <br>
-        <input class="wide" type="tel" name="telefono" id="tel" required>
-        <br><br>
-        <label for="email">Email *</label>
-        <br>
-        <input class="wide" type="email" name="email" id="email" required>
-        <br><br>
-        <label for="empresa">Empresa</label>
-        <br>
-        <input class="wide" type="text" name="empresa" id="empresa">
-        <br><br>
-        <label for="cargo">Cargo empresa</label>
-        <br>
-        <input class="wide" type="text" name="cargo_empresa" id="cargo">
-        <br><br>
-        <label for="asunto">Asunto *</label>
-        <br>
-        <input class="wide" type="text" name="asunto" id="asunto" required>
-        <br><br>
-        <label for="msg">Mensaje / Consulta *</label>
-        <br>
-        <textarea class="wide" name="msg" id="msg" cols="30" rows="10" required></textarea>
-        <br><br>
-        <input type="submit" value="Enviar">
-    </form>
-    <h6>* Campos obligatorios</h6>
-
-
-</article>
-
-
-    
-    <aside class="top">
-        <h4>Dirección oficinas</h4>
-        <br>
-        <p>
-            C/ Isabel Colbrand, 10
-            Planta 4º Oficina 94
-         28050 - Madrid
-        </p>
-        <br>
-        <h4>Teléfono / Fax</h4>
-        
-        <h5>Teléfono:</h5>
-        
-        <p>
-            +34 91 736 00 53
-        </p>
-
-        <br>
-
-        <h4>Emails</h4>
-        
-        <h5>Recursos Humanos:</h5>
-        
-        <a href="mailto:rh@agruposistemas.es">rh@agruposistemas.es</a>
-        
-        <h5>Comercial/Asesoramiento:</h5>
-        
-        <a href="mailto:comercial@agruposistemas.es">comercial@agruposistemas.es</a>
-        <br>
-        <h4>Redes sociales</h4>
-        <br>
-        <a href="https://www.linkedin.com/company/agrupo-sistemas"><img id="linkedin" src="assests/img/linkedin.png" alt="linkedin" style="width:30px;height:30px"></a>
-        <br>
-        <a href="https://www.facebook.com/agruposistemas"><img src="assests/img/face.png" alt="face" style="width:30px;height:30px"></a>
+        <div id="flex_contacto2">
+            <article>
+                <form action="">
+                    <label for="nom">Nombre y apellidos *</label>
+                    <br>
+                    <input class="wide" type="text" name="nombre" id="nom" maxlength="50" required>
+                    <br><br>
+                    <label for="tel">Movil *</label>
+                    <br>
+                    <input class="wide" type="tel" name="telefono" id="tel" required>
+                    <br><br>
+                    <label for="email">Email *</label>
+                    <br>
+                    <input class="wide" type="email" name="email" id="email" required>
+                    <br><br>
+                    <label for="empresa">Empresa</label>
+                    <br>
+                    <input class="wide" type="text" name="empresa" id="empresa">
+                    <br><br>
+                    <label for="cargo">Cargo empresa</label>
+                    <br>
+                    <input class="wide" type="text" name="cargo_empresa" id="cargo">
+                    <br><br>
+                    <label for="asunto">Asunto *</label>
+                    <br>
+                    <input class="wide" type="text" name="asunto" id="asunto" required>
+                    <br><br>
+                    <label for="msg">Mensaje / Consulta *</label>
+                    <br>
+                    <textarea class="wide" name="msg" id="msg" cols="30" rows="10" required></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <h6>* Campos obligatorios</h6>
 
 
+            </article>
+            <aside class="top">
+                <h4>Dirección oficinas</h4>
+                <br>
+                <p>
+                    C/ Isabel Colbrand, 10
+                    Planta 4º Oficina 94
+                    28050 - Madrid
+                </p>
+                <br>
+                <h4>Teléfono / Fax</h4>
 
-    </aside>
+                <h5>Teléfono:</h5>
 
-    
+                <p>
+                    +34 91 736 00 53
+                </p>
 
-    <article class="bot">
-        <h3>Localización</h3>
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="750" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=agrupo%20sistemas%20madrid&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}</style><a href="https://www.embedgooglemap.net">embed google map in webpage</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:725px;}</style></div></div>
-    </article>
+                <br>
 
- </section>
+                <h4>Emails</h4>
+
+                <h5>Recursos Humanos:</h5>
+
+                <a href="mailto:rh@agruposistemas.es">rh@agruposistemas.es</a>
+
+                <h5>Comercial/Asesoramiento:</h5>
+
+                <a href="mailto:comercial@agruposistemas.es">comercial@agruposistemas.es</a>
+                <br>
+                <h4>Redes sociales</h4>
+                <br>
+                <a href="https://www.linkedin.com/company/agrupo-sistemas"><img id="linkedin"
+                        src="assests/img/linkedin.png" alt="linkedin" style="width:30px;height:30px"></a>
+                <br>
+                <a href="https://www.facebook.com/agruposistemas"><img src="assests/img/face.png" alt="face"
+                        style="width:30px;height:30px"></a>
 
 
 
- 
- 
+            </aside>
+        </div>
+
+
+        <article class="bot">
+            <h3>Localización</h3>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="750" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=agrupo%20sistemas%20madrid&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 500px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">embed google map in webpage</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 500px;
+                            width: 725px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+
+
+
+
 
 </body>
 
-<footer>
-    
- </footer>
 
 </html>
