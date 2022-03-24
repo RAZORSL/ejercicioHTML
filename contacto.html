@@ -8,32 +8,65 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
+
+    <style>
+        body {
+            margin-left: 10% !important;
+            margin-right: 10% !important;
+        }
+
+        @media (max-width: 350px) {
+            body {
+                margin-left: 5px !important;
+                margin-right: 5px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div style="text-align: center">
+        <div class="text-center">
             <img src="img/logoAgrupo2.png">
         </div>
     </header>
 
-    <nav>
-        <ul class="flex-container-horizontal">
-            <li class="botones_nav"> <a href="index.html" class="colorLetra">Inicio</a> </li>
-            <li class="botones_nav"> <a href="sobre_nosotros.html" class="colorLetra">Quienes Somos</a> </li>
-            <li class="botones_nav"> <a href="contacto.html" class="colorLetra">Contacto</a> </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info rounded-pill px-5 py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+
     </nav>
 
-    <section>
-        <div id="flex_contacto1">
-            <h3 class="form">Formulario de contacto</h3>
-            <h3 class="info">Información de contacto</h3>
+    <section class="mt-5">
+        <div id="flex_contacto1" class="d-flex flex-row justify-content-around">
+            <h3 class="">Formulario de contacto</h3>
+            <h3 class="">Información de contacto</h3>
         </div>
 
-        <div id="flex_contacto2">
+        <div id="flex_contacto2" class="d-flex flex-row justify-content-around container-fluid">
             <article>
-                <form action="">
+                <form action="" class="border border-info rounded-3 border-5 d-flex-column p-3">
                     <label for="nom">Nombre y apellidos *</label>
                     <br>
                     <input class="wide" type="text" name="nombre" id="nom" maxlength="50" required>
@@ -63,12 +96,14 @@
                     <textarea class="wide" name="msg" id="msg" cols="30" rows="10" required></textarea>
                     <br><br>
                     <input type="submit" value="Enviar">
+                    <br>
+                    <h6>* Campos obligatorios</h6>
                 </form>
-                <h6>* Campos obligatorios</h6>
+
 
 
             </article>
-            <aside class="top">
+            <aside class="border border-info rounded-3 border-5 d-flex-column p-3">
                 <h4>Dirección oficinas</h4>
                 <br>
                 <p>
@@ -92,17 +127,17 @@
                 <h5>Recursos Humanos:</h5>
 
                 <a href="mailto:rh@agruposistemas.es">rh@agruposistemas.es</a>
-
+                <br><br>
                 <h5>Comercial/Asesoramiento:</h5>
 
                 <a href="mailto:comercial@agruposistemas.es">comercial@agruposistemas.es</a>
-                <br>
+                <br><br><br>
                 <h4>Redes sociales</h4>
                 <br>
-                <a href="https://www.linkedin.com/company/agrupo-sistemas"><img id="linkedin"
-                        src="assests/img/linkedin.png" alt="linkedin" style="width:30px;height:30px"></a>
+                <a href="https://www.linkedin.com/company/agrupo-sistemas"><img id="linkedin" src="img/linkedin.png"
+                        alt="linkedin" style="width:30px;height:30px"></a>
                 <br>
-                <a href="https://www.facebook.com/agruposistemas"><img src="assests/img/face.png" alt="face"
+                <a href="https://www.facebook.com/agruposistemas"><img src="img/face.png" alt="face"
                         style="width:30px;height:30px"></a>
 
 
@@ -111,35 +146,28 @@
         </div>
 
 
-        <article class="bot">
+        <article
+            class="border border-info rounded-3 border-5 p-4 mt-5 container-fluid justify-content-around my-5 w-50">
             <h3>Localización</h3>
-            <div class="mapouter">
+            <div class="mapouter container-fluid">
                 <div class="gmap_canvas"><iframe width="750" height="500" id="gmap_canvas"
                         src="https://maps.google.com/maps?q=agrupo%20sistemas%20madrid&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                         href="https://www.whatismyip-address.com/divi-discount/"></a><br>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 500px;
-                            width: 500px;
-                        }
-                    </style><a href="https://www.embedgooglemap.net">embed google map in webpage</a>
-                    <style>
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 500px;
-                            width: 725px;
-                        }
-                    </style>
+                    <a href="https://www.embedgooglemap.net"></a>
+
                 </div>
             </div>
         </article>
 
     </section>
+
+    <footer class="text-center border border-info rounded-pill fw-bold fs-3 mt-5 mb-5">
+        Francisco, Erlantz, Cristian
+    </footer>
 </body>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
