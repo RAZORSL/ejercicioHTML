@@ -19,14 +19,33 @@
         </div>
     </header>
 
-    <nav>
-        <ul class="flex-container-horizontal">
-            <li class="botones_nav"> <a href="index.html" class="colorLetra">Inicio</a> </li>
-            <li class="botones_nav"> <a href="sobre_nosotros.html" class="colorLetra">Quienes Somos</a> </li>
-            <li class="botones_nav"> <a href="contacto.html" class="colorLetra">Contacto</a> </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info rounded-pill px-5 py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+
     </nav>
-    <div id="body">
+    <div id="body" class="mt-5">
         <h1>Nosotros <span class="fw-light">Recursos humanos</span></h1>
         <div class="d-flex flex-row mt-5">
             <article class="w-75">
