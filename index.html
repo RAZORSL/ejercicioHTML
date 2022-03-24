@@ -6,36 +6,84 @@
     <title>Agrupo2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logoAgrupo2.png">
-
+    <link rel="stylesheet" href="./assests/css/index.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <div style="text-align: center">
+        <div class="text-center">
             <img src="img/logoAgrupo2.png">
         </div>
     </header>
 
-    <nav>
-        <ul class="flex-container-horizontal">
-            <li class="botones_nav"> <a href="index.html" class="colorLetra">Inicio</a> </li>
-            <li class="botones_nav"> <a href="sobre_nosotros.html" class="colorLetra">Quienes Somos</a> </li>
-            <li class="botones_nav"> <a href="contacto.html" class="colorLetra">Contacto</a> </li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info rounded-pill px-5 py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     <!--            <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+        </div>
+        
+      </nav>
+
+
+      <div id="carouselExampleIndicators" class="carousel slide mt-4 h-50 w-50" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/carrusel2.jpg" class="d-block w-100" alt="carrusel2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/curresel3.jpg" class="d-block w-100" alt="carrusel3">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carrusel1.jpg" class="d-block w-100" alt="carrusel1">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <section>
-        <article>
+        <article class="text-center">
             <br><br><br><br><br>
-            <h1 class="text-center">Agrupo2 Expertos en inteligencia artificial</h1>
-            <img src="img/imgIntArtificial.jpeg" style="width: 250px; height: 250px">
-            <pre><span class="negrita">Agrupo systemas a creado un grupo especializado en la inteligencia artificial</span>
+            <h1>Agrupo2 Expertos en inteligencia artificial</h1>
+            <img src="img/imgIntArtificial.jpeg" class="rounded mx-auto d-block m-5 " style="width: 250px; height: 250px">
+            <pre><span class="fw-bold">Agrupo systemas a creado un grupo especializado en la inteligencia artificial</span>
 con el finde mejorar la calidad del porducto de nuestros clientes.
 La inteligencia artificial es una nueva forma de resolver problemas dentro de los 
 cuales se incluyen los sistemas expertos, el manejo y control de robots y los procesadores,
-que intenta integrar el conocimiento en tales sistemas, en otras palabras, <span class="negrita">un sistema inteligente 
+que intenta integrar el conocimiento en tales sistemas, en otras palabras, <span class="fw-bold">un sistema inteligente 
 capaz de escribir su propio programa.</span> Un sistema experto definido como una estructura de 
 programación capaz de almacenar y utilizar un conocimiento sobre un área determinada que 
 se traduce en su capacidad de aprendizaje.
@@ -44,37 +92,37 @@ se traduce en su capacidad de aprendizaje.
             <br><br><br>
             <h1>Razones para contratar nuestro Servicio</h1>
             <br><br>
-            <div class="tablaDiv">
+            <div class="tablaDiv mb-4 ">
                 <table>
                     <thead>
                         <tr>
-                            <th rowspan="2"></th>
-                            <th>Competencia</th>
-                            <th>Agrupo2</th>
+                            <th class="bg-info" rowspan="2"></th>
+                            <th class="bg-info">Competencia</th>
+                            <th class="bg-info">Agrupo2</th>
                         <tr>
                     </thead>
                     <tr>
-                        <td class="colorTabla">Usos eficientes de los recursos</td>
+                        <td class="bg-info">Usos eficientes de los recursos</td>
                         <td class="tdNo">NO</td>
                         <td class="tdSi">Si</td>
                     </tr>
                     <tr>
-                        <td class="colorTabla">Tecnicas punteras</td>
+                        <td class="bg-info">Tecnicas punteras</td>
                         <td class="tdNo">NO</td>
                         <td class="tdSi">Si</td>
                     </tr>
                     <tr>
-                        <td class="colorTabla">Producto final de calidad asegurado</td>
+                        <td class="bg-info">Producto final de calidad asegurado</td>
                         <td class="tdNo">NO</td>
                         <td class="tdSi">Si</td>
                     </tr>
                     <tr>
-                        <td class="colorTabla">Precio economico</td>
+                        <td class="bg-info">Precio economico</td>
                         <td class="tdNo">NO</td>
                         <td class="tdNo">NO</td>
                     </tr>
                     <tr>
-                        <td class="colorTabla" rowspan="2">Conclusion</td>
+                        <td class="bg-info" rowspan="2">Conclusion</td>
                         <td colspan="2" class="tdSi">Elige Agrupo2</td>
                     </tr>
                     <tr>
@@ -85,7 +133,7 @@ se traduce en su capacidad de aprendizaje.
             </div>
         </article>
     </section>
-    <footer>Francisco, Erlantz, Cristian
+    <footer class=" border-1 border-info text-center rounded-pill rounded-3">Francisco, Erlantz, Cristian
     </footer> <br><br><br>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
