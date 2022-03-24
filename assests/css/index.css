@@ -1,0 +1,40 @@
+
+.tdNo:hover {
+  background-color: rgb(235, 170, 170);
+}
+.tdSi:hover {
+  background-color: rgb(176, 224, 176);
+}
+
+.carousel ,.tablaDiv {
+  float: left;
+  left: 50%;
+  transform: translatex(-50%);
+  position: relative;
+}
+section{
+  margin-top: 30%;
+}
+footer{
+  margin-top: 15%;
+ 
+}
+
+body {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+}
+
+@media (min-width: 1200px) {
+  #aside_li {
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+}
+
