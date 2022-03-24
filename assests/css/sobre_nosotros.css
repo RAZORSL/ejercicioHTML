@@ -1,0 +1,17 @@
+body {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+}
+
+@media (min-width: 1200px) {
+  #aside_li {
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+}
